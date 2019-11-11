@@ -31,11 +31,11 @@ public class OrderService {
          return null;
     }
 
-    public Orders saveOrder (int itemId, int noOfOrder, String email){
+    public Orders saveOrder (int itemId, int noOfItems, String email){
         Orders orders = new Orders();
         orders.setItemId(itemId);
         orders.setUserEmail(email);
-        orders.setNoOfOrder(noOfOrder);
+        orders.setNoOfItems(noOfItems);
         return orderRepository.save(orders);
     }
 
