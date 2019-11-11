@@ -27,7 +27,7 @@ public class Items {
     private Double itemPrice;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "CreatedOn")
+    @Column(name = "CreatedOn", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", length = 0, insertable = false)
     private Date createdOn;
 
     @Temporal(TemporalType.TIMESTAMP)

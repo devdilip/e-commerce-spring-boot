@@ -23,7 +23,7 @@ public class User {
     private String mobile;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "CreatedOn")
+    @Column(name = "CreatedOn", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", length = 0, insertable = false)
     private Date createdOn;
 
     @Temporal(TemporalType.TIMESTAMP)
