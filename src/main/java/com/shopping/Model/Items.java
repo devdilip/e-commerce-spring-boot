@@ -13,10 +13,25 @@ public class Items {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "ItemNo")
     private String itemNo;
+
+    @Column(name = "ItemName")
     private String itemName;
+
+    @Column(name = "NoOfItem")
     private Integer noOfItem;
+
+    @Column(name = "ItemPrice")
     private Double itemPrice;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "CreatedOn")
+    private Date createdOn;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "DeletedOn")
     private Date deletedOn;
 
     public int getId() {
@@ -57,5 +72,21 @@ public class Items {
 
     public void setItemPrice(Double itemPrice) {
         this.itemPrice = itemPrice;
+    }
+
+    public Date getCreatedOn() {
+        return createdOn;
+    }
+
+    public void setCreatedOn(Date createdOn) {
+        this.createdOn = createdOn;
+    }
+
+    public Date getDeletedOn() {
+        return deletedOn;
+    }
+
+    public void setDeletedOn(Date deletedOn) {
+        this.deletedOn = deletedOn;
     }
 }
