@@ -4,6 +4,7 @@ package com.shopping.Model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "Orders")
@@ -13,11 +14,28 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "OrderId")
+    private int orderId;
+
+    @Column(name = "UserId")
     private int userId;
+
+    @Column(name = "ItemId")
     private int itemId;
+
+    @Column(name = "UserEmail")
     private String userEmail;
-    private int noOfOrder;
+
+    @Column(name = "NoOfItem")
+    private int noOfItems;
+
+    @Column(name = "OrderStatus")
     private String orderStatus;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "CreatedOn")
+    private Date createdOn;
 
     public int getId() {
         return id;
@@ -25,6 +43,14 @@ public class Orders {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
     public int getUserId() {
@@ -51,11 +77,27 @@ public class Orders {
         this.userEmail = userEmail;
     }
 
-    public int getNoOfOrder() {
-        return noOfOrder;
+    public int getNoOfItems() {
+        return noOfItems;
     }
 
-    public void setNoOfOrder(int noOfOrder) {
-        this.noOfOrder = noOfOrder;
+    public void setNoOfItems(int noOfItems) {
+        this.noOfItems = noOfItems;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public Date getCreatedOn() {
+        return createdOn;
+    }
+
+    public void setCreatedOn(Date createdOn) {
+        this.createdOn = createdOn;
     }
 }
