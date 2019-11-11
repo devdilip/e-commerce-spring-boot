@@ -1,7 +1,7 @@
 package com.shopping.Services;
 
-import com.shopping.DTO.ItemRequestDTO;
-import com.shopping.DTO.ItemUpdateRequestDTO;
+import com.shopping.DTO.RequestDTO.ItemRequestDTO;
+import com.shopping.DTO.RequestDTO.ItemUpdateRequestDTO;
 import com.shopping.Model.Items;
 import com.shopping.Repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;

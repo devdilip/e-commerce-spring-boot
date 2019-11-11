@@ -1,4 +1,4 @@
-package com.shopping.DTO;
+package com.shopping.DTO.RequestDTO;
 
 public class ItemUpdateRequestDTO {
     private Integer noOfItem;

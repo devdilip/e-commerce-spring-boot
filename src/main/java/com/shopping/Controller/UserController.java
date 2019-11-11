@@ -1,7 +1,7 @@
 package com.shopping.Controller;
 
 
-import com.shopping.DTO.UserRequestDTO;
+import com.shopping.DTO.RequestDTO.UserRequestDTO;
 import com.shopping.Model.User;
 import com.shopping.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

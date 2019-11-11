@@ -1,7 +1,6 @@
 package com.shopping.Services;
 
-import com.shopping.DTO.UserRequestDTO;
-import com.shopping.Model.Items;
+import com.shopping.DTO.RequestDTO.UserRequestDTO;
 import com.shopping.Model.User;
 import com.shopping.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

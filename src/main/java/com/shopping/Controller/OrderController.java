@@ -1,8 +1,7 @@
 package com.shopping.Controller;
 
-import com.shopping.DTO.OrderResponseDTO;
+import com.shopping.DTO.ResponseDTO.OrderResponseDTO;
 import com.shopping.Model.Orders;
-import com.shopping.Model.User;
 import com.shopping.Services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

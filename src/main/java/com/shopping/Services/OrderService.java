@@ -1,7 +1,6 @@
 package com.shopping.Services;
 
-import com.shopping.DTO.OrderRequestDTO;
-import com.shopping.DTO.OrderResponseDTO;
+import com.shopping.DTO.ResponseDTO.OrderResponseDTO;
 import com.shopping.Model.Items;
 import com.shopping.Model.Orders;
 import com.shopping.Model.User;
@@ -11,7 +10,6 @@ import com.shopping.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

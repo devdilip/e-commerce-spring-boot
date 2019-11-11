@@ -1,4 +1,4 @@
-package com.shopping.DTO;
+package com.shopping.DTO.ResponseDTO;
 
 public class OrderResponseDTO {
     private int userId;
